@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Java Web Service
-categories: [java]
+categories: [Java, 'Web Service']
 description: Java Web Service
 keywords: java, web service
 ---
