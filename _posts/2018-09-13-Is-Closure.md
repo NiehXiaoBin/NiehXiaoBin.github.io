@@ -95,6 +95,6 @@ keywords: Java, closure
            getTask().forEach(task => console.log(task()));
         ```
     1. out
-        > 9
-          9
+        > 9  
+          9  
           9
