@@ -38,7 +38,7 @@ keywords: Java, closure
             }
         }
         ```
-    
+     
     1. out 
     
         > 0 Hello World  
@@ -77,4 +77,24 @@ keywords: Java, closure
     1. out
         > 9  
           9  
+          9
+
+1. 
+    1. code
+        ```javascript
+           function getTask() {
+               var list = [];
+               for (var i = 0; i < 3; i++) {
+                   list.push(function () {
+                       return i * i;
+                   });
+               }
+               return list;
+           }
+           
+           getTask().forEach(task => console.log(task()));
+        ```
+    1. out
+        > 9
+          9
           9
