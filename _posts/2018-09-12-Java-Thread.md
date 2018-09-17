@@ -157,7 +157,7 @@ public class SynchronizedTest {
     }
 
     /**
-     * count < 5000000
+     * count = 5000000
      */
     @Test
     public void test03() {
@@ -173,7 +173,7 @@ public class SynchronizedTest {
 
 
     /**
-     * count < 5000000
+     * count = 5000000
      */
     @Test
     public void test04() {
