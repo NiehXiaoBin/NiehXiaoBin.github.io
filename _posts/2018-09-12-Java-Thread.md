@@ -104,3 +104,89 @@ Thread
     > End  
     Hello World
     
+## 5. synchronized
+
+```java
+public class SynchronizedTest {
+
+    private static Integer count = 0;
+
+    private void doTask(Runnable task) {
+        try {
+            List<Thread> taskList = new ArrayList<>();
+            for (int i = 0; i < 5; i++) {
+                taskList.add(new Thread(task));
+            }
+
+            taskList.forEach(Thread::start);
+
+            for (Thread thread : taskList) {
+                thread.join();
+            }
+
+            System.out.println(count);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * count < 5000000
+     */
+    @Test
+    public void test01() {
+        doTask(() -> {
+            for (int j = 0; j < 1000000; j++) {
+                count++;
+            }
+        });
+    }
+
+    /**
+     * count < 5000000
+     */
+    @Test
+    public void test02() {
+        doTask(() -> {
+            for (int j = 0; j < 1000000; j++) {
+                synchronized (count) {
+                    count++;
+                }
+            }
+        });
+    }
+
+    /**
+     * count < 5000000
+     */
+    @Test
+    public void test03() {
+        Object lock = new Object();
+        doTask(() -> {
+            for (int i = 0; i < 1000000; i++) {
+                synchronized (lock) {
+                    count++;
+                }
+            }
+        });
+    }
+
+
+    /**
+     * count < 5000000
+     */
+    @Test
+    public void test04() {
+        ReentrantLock lock = new ReentrantLock();
+        doTask(() -> {
+            for (int i = 0; i < 1000000; i++) {
+                lock.lock();
+                count++;
+                lock.unlock();
+            }
+        });
+    }
+
+}
+
+```
