@@ -190,3 +190,53 @@ public class SynchronizedTest {
 }
 
 ```
+
+## wait and notify
+
+1. code 
+    ```java
+    public class WaitAndNotify {
+        public static void main(String[] args) throws InterruptedException {
+        
+            Object semaphore = new Object();
+            
+            Thread thread1 = new Thread(() -> {
+                synchronized (semaphore) {
+                    System.out.println("thread1 have semaphore");
+                    System.out.println("thread1 start wait");
+                    try {
+                        semaphore.wait();
+                        System.out.println("thread1 end wait");
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+    
+            Thread thread2 = new Thread(()->{
+                synchronized (semaphore) {
+                    System.out.println("thread2 have semaphore");
+                    System.out.println("thread2 start notify");
+                    semaphore.notify();
+                    System.out.println("thread2 end notify");
+                }
+            });
+    
+            thread1.start();
+            Thread.sleep(100);
+            thread2.start();
+            
+            thread1.join();
+            thread2.join();
+        }
+    }
+    
+    ```       
+    
+1. out
+    > thread1 have semaphore  
+      thread1 start wait  
+      thread2 have semaphore  
+      thread2 start notify  
+      thread2 end notify  
+      thread1 end wait  
