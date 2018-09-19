@@ -191,7 +191,7 @@ public class SynchronizedTest {
 
 ```
 
-## wait and notify
+## 6. wait and notify
 
 1. code 
     ```java
@@ -233,6 +233,52 @@ public class SynchronizedTest {
     
     ```       
     
+1. out
+    > thread1 have semaphore  
+      thread1 start wait  
+      thread2 have semaphore  
+      thread2 start notify  
+      thread2 end notify  
+      thread1 end wait  
+
+## 7. Condition
+
+1. code
+    ```java
+    public class ConditionTest {
+        public static void main(String[] args) throws InterruptedException {
+            ReentrantLock lock = new ReentrantLock();
+            Condition condition = lock.newCondition();
+            Thread thread1 = new Thread(() -> {
+                lock.lock();
+                System.out.println("thread1 have semaphore");
+                System.out.println("thread1 start wait");
+                try {
+                    condition.await();
+                    System.out.println("thread1 end wait");
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                lock.unlock();
+            });
+    
+            Thread thread2 = new Thread(() -> {
+                lock.lock();
+                System.out.println("thread2 have semaphore");
+                System.out.println("thread2 start notify");
+                condition.signal();
+                System.out.println("thread2 end notify");
+                lock.unlock();
+            });
+    
+            thread1.start();
+            Thread.sleep(100);
+            thread2.start();
+            thread1.join();
+            thread2.join();
+        }
+    }
+    ```
 1. out
     > thread1 have semaphore  
       thread1 start wait  
