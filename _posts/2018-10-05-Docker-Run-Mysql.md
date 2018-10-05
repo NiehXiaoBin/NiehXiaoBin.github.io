@@ -41,3 +41,9 @@ keywords: Docker, MySQL
 ```bash
     docker run -d -p 3306:3306 --name mysql-5.7 -v /docker/mysql/5.7/config/my.cnf:/etc/my.cnf -v /docker/mysql/5.7/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=oracle  mysql:5.7
 ```
+
+## 5. Connection 
+```bash
+    docker exec -it mysql-5.7 bash
+    mysql -u root -p 
+```
