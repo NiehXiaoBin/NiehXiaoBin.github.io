@@ -1,5 +1,9 @@
-- name: 冰笑
+- name: Blogs
   url: https://NiehXiaoBin.github.com
 
 - name: Github
   url: https://github.com/NiehXiaoBin
+
+- name: Email
+  url: mailto:NiehXiaoBin@163.com
+
