@@ -6,8 +6,6 @@ description: Use MyBatis Generator
 keywords: MyBatis
 ---
 
-# Mybatis Generator
-
 ## MyBatis Generator Config
 
 mybatis-generator.xml  
