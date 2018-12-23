@@ -8,7 +8,7 @@ menu: About
 permalink: /about/
 ---
 
-我是冰笑
+I'm NiehXiaoBin. 
 
 
 ## Me
