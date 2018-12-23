@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 资源
+title: Resources
 categories: [Other]
-description: 杂记
-keywords: keyword1, keyword2
+description: Resources
+keywords: E-Book, Epub, BaiduNetDisk
 ---
 
-## 1. 电子书
+## 1. E-Book Share
 
 + [bookset.me](https://bookset.me/)
 + [epubee.com](http://cn.epubee.com/)
@@ -24,9 +24,9 @@ keywords: keyword1, keyword2
 + Android
     + [Lithium](https://pan.baidu.com/s/1tvkmp3zrXbzQmMKvwA-WBw)
     
-## 3. Java 网站
+## 3. Java Study 
  + [HOW2JCN](http://how2j.cn/)
  + [HowToDoInJava](https://howtodoinjava.com/)
 
-## 4. 百度资源搜索
+## 4. Baidu Net Disk File Search 
 + [盘多多](http://www.panduoduo.net/)
