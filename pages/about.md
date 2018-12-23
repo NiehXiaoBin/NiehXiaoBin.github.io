@@ -1,17 +1,17 @@
 ---
 layout: page
 title: About
-description: 努力奋斗的程序员
-keywords: NIce, 冰笑
+description: 勤奋的程序员
+keywords: Nieh, 冰笑
 comments: true
-menu: 关于
+menu: About
 permalink: /about/
 ---
 
 我是冰笑
 
 
-## 联系
+## Me
 
 {% for website in site.data.social %}
 * {{ website.sitename }}：[@{{ website.name }}]({{ website.url }})
