@@ -4,9 +4,9 @@
 baseurl:
 url: https://NiehXiaoBin.github.io
 date_format: "ordinal"
-title: 冰笑
+title: Nieh
 subtitle: "NIce! Good Good Study, Day Day Up."
-description: "冰笑的个人博客"
+description: "冰笑: NiehXiaoBin"
 keywords: NIce, 冰笑
 timezone: Asia/Shanghai
 encoding: "utf-8"
@@ -16,8 +16,8 @@ side_bar_repo_limit: 5
 #      Author      #
 # ---------------- #
 author: NIce
-organization: 
-organization_url: 
+organization:
+organization_url:
 github_username: NiehXiaoBin
 location: BeiJing, China
 email: NiehXiaoBin@163.com
@@ -28,11 +28,11 @@ email: NiehXiaoBin@163.com
 navs:
   -
     href: /
-    label: 首页
+    label: Index
 
   -
     href: /categories/
-    label: 分类
+    label: Category
 
 #   -
 #     href: /archives/
@@ -40,15 +40,15 @@ navs:
 
   -
     href: /wiki/
-    label: 维基
+    label: Wiki
 
   -
     href: /links/
-    label: 链接
+    label: Links
 
   -
     href: /about/
-    label: 关于
+    label: About
 
 # ---------------- #
 #       RSS        #
@@ -92,7 +92,7 @@ repository: NiehXiaoBin/NiehXiaoBin.github.io
 ## !!!Important!!! Please modify infos below to yours
 ## https://disqus.com
 #disqus:
-#    username: 
+#    username:
 ## https://github.com/gitalk/gitalk#install
 #gitalk:
 #    owner: JSnail
@@ -100,12 +100,12 @@ repository: NiehXiaoBin/NiehXiaoBin.github.io
 #    clientID: 36fb7ca4674e808981f9
 #    clientSecret: cbe26b42dbaf83ccfdbd411f5801905a3d7dc210
 #
-#deploy:   
-#  type: git  
-#  branch: master  
-#  repo:   
-#    github: git@github.com:JSnail.coding.me/Snail 
-#    coding: git@git.coding.net:git.coding.net/JSnail/Snail.git 
+#deploy:
+#  type: git
+#  branch: master
+#  repo:
+#    github: git@github.com:JSnail.coding.me/Snail
+#    coding: git@git.coding.net:git.coding.net/JSnail/Snail.git
 #
 #
 ## 在使用其它评论组件时可点击显示 Disqus
