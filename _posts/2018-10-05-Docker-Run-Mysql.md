@@ -47,3 +47,26 @@ keywords: Docker, MySQL
     docker exec -it mysql-5.7 bash
     mysql -u root -p 
 ```
+
+## 6. Disable SELinux
+
+1. 查看SELinux状态
+
+    ```sh
+        getenfore
+    ```
+    ```bash
+        sestatus -v
+    ```
+
+1. 临时关闭
+
+    ```sh
+        setenfore 0
+    ```
+1. 永久关闭
+    
+    ```sh
+        vi /etc/selinux/config
+    ```
+    将 SELINUX=enforcing 改为 SELINUX=disabled 
