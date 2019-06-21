@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: Use Yum Down Package
+title: Use Yum Download Package
 categories: [linux]
 description: use yum down ...
 keywords: centos, redhat, yum, down
