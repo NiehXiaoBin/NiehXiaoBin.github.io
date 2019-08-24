@@ -7,7 +7,7 @@ date_format: "ordinal"
 title: Nieh
 subtitle: "NIce! Good Good Study, Day Day Up."
 description: "冰笑: NiehXiaoBin"
-keywords: NIce, 冰笑
+keywords: Nieh, 冰笑
 timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5
@@ -15,11 +15,11 @@ side_bar_repo_limit: 5
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: NIce
+author: Nieh
 organization:
 organization_url:
 github_username: NiehXiaoBin
-location: BeiJing, China
+location: RiZhao, China
 email: NiehXiaoBin@163.com
 
 # ---------------- #
